@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Settings</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <customImages>
+                        <TCEforms>
+                            <label>Images</label>
+                            <config>
+                                <appearance>
+                                    <enabledControls>
+                                        <delete>1</delete>
+                                        <dragdrop>1</dragdrop>
+                                        <hide>1</hide>
+                                        <info>1</info>
+                                        <localize>1</localize>
+                                        <new/>
+                                        <sort/>
+                                    </enabledControls>
+                                    <headerThumbnail>
+                                        <field>uid_local</field>
+                                        <height>45c</height>
+                                        <width>45</width>
+                                    </headerThumbnail>
+                                    <useSortable>1</useSortable>
+                                </appearance>
+                                <behaviour>
+                                    <localizationMode>select</localizationMode>
+                                    <localizeChildrenAtParentLocalization>1</localizeChildrenAtParentLocalization>
+                                </behaviour>
+                                <filter type="array">
+                                    <numIndex index="0">
+                                        <parameters>
+                                            <allowedFileExtensions>gif,jpg,jpeg,bmp,png,pdf,svg,ai,mp3,wav,mp4,webm,youtube,vimeo</allowedFileExtensions>
+                                            <disallowedFileExtensions />
+                                        </parameters>
+                                        <userFunc>TYPO3\CMS\Core\Resource\Filter\FileExtensionFilter->filterInlineChildren</userFunc>
+                                    </numIndex>
+                                </filter>
+                                <foreign_field>uid_foreign</foreign_field>
+                                <foreign_label>uid_local</foreign_label>
+                                <foreign_match_fields>
+                                    <fieldname>customImages</fieldname>
+                                </foreign_match_fields>
+                                <foreign_selector>uid_local</foreign_selector>
+                                <foreign_selector_fieldTcaOverride>
+                                    <config>
+                                        <appearance>
+                                            <elementBrowserAllowed>gif,jpg,jpeg,bmp,png,pdf,svg,ai,mp3,wav,mp4,webm,youtube,vimeo</elementBrowserAllowed>
+                                            <elementBrowserType>file</elementBrowserType>
+                                        </appearance>
+                                    </config>
+                                </foreign_selector_fieldTcaOverride>
+                                <foreign_sortby>sorting_foreign</foreign_sortby>
+                                <foreign_table>sys_file_reference</foreign_table>
+                                <foreign_table_field>tablenames</foreign_table_field>
+                                <foreign_types type="array">
+                                    <numIndex index="0">
+                                        <showitem>--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette, --palette--;;filePalette</showitem>
+                                    </numIndex>
+                                    <numIndex index="1">
+                                        <showitem>--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette, --palette--;;filePalette</showitem>
+                                    </numIndex>
+                                    <numIndex index="2">
+                                        <showitem>--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette, --palette--;;filePalette</showitem>
+                                    </numIndex>
+                                    <numIndex index="3">
+                                        <showitem>--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.audioOverlayPalette;audioOverlayPalette, --palette--;;filePalette</showitem>
+                                    </numIndex>
+                                    <numIndex index="4">
+                                        <showitem>--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.videoOverlayPalette;videoOverlayPalette, --palette--;;filePalette</showitem>
+                                    </numIndex>
+                                    <numIndex index="5">
+                                        <showitem>--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette, --palette--;;filePalette</showitem>
+                                    </numIndex>
+                                </foreign_types>
+                                <type>inline</type>
+                            </config>
+                        </TCEforms>
+                    </customImages>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>
